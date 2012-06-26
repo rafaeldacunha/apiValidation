@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<systems>
+<system name="demo" secret="p9bUt6ab" url="api.terratv.terra.com.br">
+<method name="getCategories" params="country=br&amp;firstResult=1" expectedTag="title" expectedTagValue="esportes" expectedTagAttribute="atributo" expectedTagAttributeValue="valorAtributo"/>
+</system>
+</systems>
