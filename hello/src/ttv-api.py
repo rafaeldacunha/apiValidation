@@ -3,6 +3,7 @@ Created on 26/03/2012
 
 @author: rafael.cunha
 '''
+
 import httplib, base64, urllib
 import hashlib, md5
 from time import gmtime, localtime, strftime
