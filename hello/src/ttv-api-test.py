@@ -66,5 +66,6 @@ for name in systemsList:
     print "system:" + name
 
 print "-- Validação XSD"
+print "-- Validação XSD 1"
 
     
