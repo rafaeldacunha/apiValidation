@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: latin-1 -*-
 '''
 Created on 26/06/2012
 
@@ -12,17 +14,18 @@ import lxml
 
 from lxml import etree
 from StringIO import StringIO
+import os, sys
 
 # Construct XML relevant to the XML schema we're validating against. By altering the string, adding/removing elements
 # we can force different errors to occur when validating.
-xml = StringIO('''<?xml version="1.0" encoding="utf-8"?>
-    <channels>
+xml = StringIO('''<?xml version="1.0" encoding="iso-8859-1"?>
+    <channels xmlns:TerraTVUtils="TerraTV:Util">
         <channel>
-        <id>a</id>
-        <title>Diversao</title>
-        <ad_channel>xis</ad_channel>
-        <ad_frequency>0</ad_frequency>
-        <adserver>no</adserver>
+        <id><![CDATA[4845]]></id>
+        <title><![CDATA[Diversão]]></title>
+        <ad_channel><![CDATA[]]></ad_channel>
+        <ad_frequency><![CDATA[0]]></ad_frequency>
+        <adserver><![CDATA[no]]></adserver>
         </channel>
     </channels>
 ''')
